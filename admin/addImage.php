@@ -2,20 +2,9 @@
 
 include 'dbconnect.php';
 if(isset($_POST['addImage'])){
-  $filename=$_FILES['imageFile']['name'];
-  $tempname=$_FILES['imageFile']['tmp_name'];
-  $folder="uploads/".$filename;
-date_default_timezone_set('Africa/Kigali');
-$date=date('Y-m-d h:i:s a',time());
-  $sql="INSERT INTO images(cat_id,fillename)VALUES('1','$filename')";
-  mysqli_query($con,$sql);
-  if(move_uploaded_file($tempname,$folder)){
-echo "<script>alert('Image uploaded successfully')</script>";
-  }else{
-    echo "<script>alert('Something Went wrong')</script>";
-  }
-}
 
+  $addimga
+}
 ?>
 
 
